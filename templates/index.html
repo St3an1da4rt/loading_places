@@ -4,85 +4,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>adsfdsaf</h1>
+    <header>
+        <a href="https://360.yandex.ru/?from=mail-header-360" class="PSHeaderLogo360-Ya" title="Яндекс" rel="noopener noreferrer" target="_blank"><svg width="109" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 0)"><circle transform="translate(0 1)" fill="#FC3F1D" cx="14" cy="14" r="14"></circle><path transform="translate(0 1)" fill="#fff" d="M16.064 7.84h-1.416c-2.43 0-3.644 1.215-3.644 3.036 0 2.024.81 3.036 2.632 4.25l1.416 1.013-4.048 6.274H7.766l3.845-5.667c-2.226-1.62-3.44-3.036-3.44-5.667 0-3.239 2.226-5.465 6.477-5.465h4.25v16.799h-2.834V7.84Z"></path></g><g transform="translate(31 0)"><path fill="url(#gradient--0-26318)" d="M14.002 29.002c7.733 0 14.002-6.269 14.002-14.002 0-7.733-6.27-14.002-14.002-14.002C6.269.998 0 7.267 0 15c0 7.733 6.269 14.002 14.002 14.002Z"></path><path fill="#fff" d="M14.001 23.124c2.63 0 4.761-3.636 4.761-8.121 0-4.486-2.131-8.122-4.76-8.122-2.63 0-4.762 3.636-4.762 8.121 0 4.486 2.132 8.122 4.761 8.122Z"></path><path fill="#fff" fill-rule="evenodd" d="M5.075 8.558c-1.413-.072-3.116 2.885-3.116 6.44 0 3.557 1.703 6.513 3.116 6.44 1.401-.072 2.205-2.883 2.205-6.44 0-3.555-.804-6.367-2.205-6.44ZM22.927 21.439c1.413.072 3.116-2.884 3.116-6.44 0-3.556-1.703-6.513-3.116-6.44-1.401.072-2.205 2.884-2.205 6.44 0 3.556.804 6.367 2.205 6.44Z" clip-rule="evenodd"></path><defs><radialGradient id="gradient--0-26318" cx="0" cy="0" r="1" gradientTransform="matrix(0 17.9224 -23.2703 0 14.002 11.08)" gradientUnits="userSpaceOnUse"><stop stop-color="#FF9A6F"></stop><stop offset=".61" stop-color="#FF6427"></stop><stop offset="1" stop-color="#EB581E"></stop></radialGradient></defs></g><g transform="translate(1 0)"><path fill="currentColor" d="M69.914 7.19h-6.74V4.184h11.142v1.853l-4.737 6.343c3.857.545 5.739 2.943 5.739 6.497s-2.217 6.708-7.345 6.708c-1.912 0-3.702-.516-5.069-1.275v-3.064c1.367.667 2.641 1.517 5.101 1.517s3.735-1.73 3.735-3.856c0-2.368-1.517-3.824-4.372-3.824h-2.033v-1.852l4.582-6.041h-.003Zm7.073 8.56c0-7.348 2.49-11.93 8.014-11.93 2.004 0 3.308.424 4.402.972V7.86c-1.245-.7-2.611-1.245-4.34-1.245-3.097 0-4.552 2.125-4.795 7.043.91-1.488 2.49-2.369 4.493-2.369 3.46 0 5.798 2.398 5.798 6.8 0 4.736-2.914 7.499-6.497 7.499-4.494 0-7.072-3.098-7.072-9.835m7.013-1.58c-2.034 0-3.37 1.61-3.37 4.188 0 2.822 1.274 4.402 3.127 4.402 1.974 0 3.127-1.547 3.127-4.431 0-2.884-1.275-4.159-2.885-4.159Zm15.543 11.415c-3.824 0-7.043-2.943-7.043-10.899 0-7.499 3.128-10.866 7.043-10.866 3.916 0 7.013 2.884 7.013 10.866 0 7.982-3.157 10.899-7.013 10.899Zm.03-18.914c-1.882 0-3.4 1.882-3.4 7.985 0 6.103 1.488 8.074 3.4 8.074 2.155 0 3.34-2.549 3.34-8.014 0-5.95-1.547-8.045-3.34-8.045Z"></path></g></svg></a>
+        <div class="hrefs">
+            <a href="/about">О нас</a>
+            <a href="/place">Где найти</a>
+            <a href="/main">Главное меню</a>
+        </div>
+    </header>
     <div class="main">
         <div class="plane">
-            <div class="surfur_place">
-                <button class="sulfur_button">a1</button>
-                <button class="sulfur_button">b1</button>
-                <button class="sulfur_button">c1</button>
-                <button class="sulfur_button">d1</button>
-                <button class="sulfur_button">e1</button>
-                <button class="sulfur_button">f1</button>
-                <button class="sulfur_button">g1</button>
-                <button class="sulfur_button">h1</button>
-                <button class="sulfur_button">a2</button>
-                <button class="sulfur_button">b2</button>
-                <button class="sulfur_button">c2</button>
-                <button class="sulfur_button">d2</button>
-                <button class="sulfur_button">e2</button>
-                <button class="sulfur_button">f2</button>
-                <button class="sulfur_button">g2</button>
-                <button class="sulfur_button">h2</button>
-                <button class="sulfur_button">a3</button>
-                <button class="sulfur_button">b3</button>
-                <button class="sulfur_button">c3</button>
-                <button class="sulfur_button">d3</button>
-                <button class="sulfur_button">e3</button>
-                <button class="sulfur_button">f3</button>
-                <button class="sulfur_button">g3</button>
-                <button class="sulfur_button">h3</button>
-                <button class="sulfur_button">a4</button>
-                <button class="sulfur_button">b4</button>
-                <button class="sulfur_button">c4</button>
-                <button class="sulfur_button">d4</button>
-                <button class="sulfur_button">e4</button>
-                <button class="sulfur_button">f4</button>
-                <button class="sulfur_button">g4</button>
-                <button class="sulfur_button">h4</button>
-                <button class="sulfur_button">a5</button>
-                <button class="sulfur_button">b5</button>
-                <button class="sulfur_button">c5</button>
-                <button class="sulfur_button">d5</button>
-                <button class="sulfur_button">e5</button>
-                <button class="sulfur_button">f5</button>
-                <button class="sulfur_button">g5</button>
-                <button class="sulfur_button">h5</button>
-                <button class="sulfur_button">a6</button>
-                <button class="sulfur_button">b6</button>
-                <button class="sulfur_button">c6</button>
-                <button class="sulfur_button">d6</button>
-                <button class="sulfur_button">e6</button>
-                <button class="sulfur_button">f6</button>
-                <button class="sulfur_button">g6</button>
-                <button class="sulfur_button">h6</button>
-                <button class="sulfur_button">a7</button>
-                <button class="sulfur_button">b7</button>
-                <button class="sulfur_button">c7</button>
-                <button class="sulfur_button">d7</button>
-                <button class="sulfur_button">e7</button>
-                <button class="sulfur_button">f7</button>
-                <button class="sulfur_button">g7</button>
-                <button class="sulfur_button">h7</button>
-                <button class="sulfur_button">a8</button>
-                <button class="sulfur_button">b8</button>
-                <button class="sulfur_button">c8</button>
-                <button class="sulfur_button">d8</button>
-                <button class="sulfur_button">e8</button>
-                <button class="sulfur_button">f8</button>
-                <button class="sulfur_button">g8</button>
-                <button class="sulfur_button">h8</button>
-                <button class="sulfur_button">a9</button>
-                <button class="sulfur_button">b9</button>
-                <button class="sulfur_button">c9</button>
-                <button class="sulfur_button">d9</button>
-                <button class="sulfur_button">e9</button>
-                <button class="sulfur_button">f9</button>
-                <button class="sulfur_button">g9</button>
-                <button class="sulfur_button">h9</button>
+            <div class="Top_workspace">
+                <div class="triangle"></div>
+                <div class="surfur-place">
+                    {% if join2['su-a4'] %}<button class="surfur_button" style="background-color: brown;">k4</button>{% else %}<button class="surfur_button">a4</button>{% endif %}
+                    {% if join2['su-b4'] %}<button class="surfur_button" style="background-color: brown;">b4</button>{% else %}<button class="surfur_button">b4</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-k4'] %}<button class="surfur_button" style="background-color: brown;">k4</button>{% else %}<button class="surfur_button">k4</button>{% endif %}
+                    {% if join2['su-j4'] %}<button class="surfur_button" style="background-color: brown;">j4</button>{% else %}<button class="surfur_button">j4</button>{% endif %}
+                    {% if join2['su-a3'] %}<button class="surfur_button" style="background-color: brown;">a3</button>{% else %}<button class="surfur_button">a3</button>{% endif %}
+                    {% if join2['su-b3'] %}<button class="surfur_button" style="background-color: brown;">b3</button>{% else %}<button class="surfur_button">b3</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-k3'] %}<button class="surfur_button" style="background-color: brown;">k3</button>{% else %}<button class="surfur_button">k3</button>{% endif %}
+                    {% if join2['su-j3'] %}<button class="surfur_button" style="background-color: brown;">j3</button>{% else %}<button class="surfur_button">j3</button>{% endif %}
+                    {% if join2['su-a2'] %}<button class="surfur_button" style="background-color: brown;">a2</button>{% else %}<button class="surfur_button">a2</button>{% endif %}
+                    {% if join2['su-b2'] %}<button class="surfur_button" style="background-color: brown;">b2</button>{% else %}<button class="surfur_button">b2</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-k2'] %}<button class="surfur_button" style="background-color: brown;">k2</button>{% else %}<button class="surfur_button">k2</button>{% endif %}
+                    {% if join2['su-j2'] %}<button class="surfur_button" style="background-color: brown;">j2</button>{% else %}<button class="surfur_button">j2</button>{% endif %}
+                    {% if join2['su-a1'] %}<button class="surfur_button" style="background-color: brown;">a1</button>{% else %}<button class="surfur_button">a1</button>{% endif %}
+                    {% if join2['su-b1'] %}<button class="surfur_button" style="background-color: brown;">b1</button>{% else %}<button class="surfur_button">b1</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-k1'] %}<button class="surfur_button" style="background-color: brown;">k1</button>{% else %}<button class="surfur_button">k1</button>{% endif %}
+                    <button class="surfur_button">j1</button>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-c1'] %}<button class="surfur_button" style="background-color: brown;">c1</button>{% else %}<button class="surfur_button">c1</button>{% endif %}
+                    {% if join2['su-d1'] %}<button class="surfur_button" style="background-color: brown;">d1</button>{% else %}<button class="surfur_button">d1</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-g1'] %}<button class="surfur_button" style="background-color: brown;">g1</button>{% else %}<button class="surfur_button">g1</button>{% endif %}
+                    {% if join2['su-h1'] %}<button class="surfur_button" style="background-color: brown;">h1</button>{% else %}<button class="surfur_button">h1</button>{% endif %}
+                    {% if join2['su-i1'] %}<button class="surfur_button" style="background-color: brown;">i1</button>{% else %}<button class="surfur_button">i1</button>{% endif %}
+                    {% if join2['su-c2'] %}<button class="surfur_button" style="background-color: brown;">c2</button>{% else %}<button class="surfur_button">c2</button>{% endif %}
+                    {% if join2['su-d2'] %}<button class="surfur_button" style="background-color: brown;">d2</button>{% else %}<button class="surfur_button">d2</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    {% if join2['su-g2'] %}<button class="surfur_button" style="background-color: brown;">g2</button>{% else %}<button class="surfur_button">g2</button>{% endif %}
+                    {% if join2['su-h2'] %}<button class="surfur_button" style="background-color: brown;">h2</button>{% else %}<button class="surfur_button">h2</button>{% endif %}
+                    {% if join2['su-i2'] %}<button class="surfur_button" style="background-color: brown;">i2</button>{% else %}<button class="surfur_button">i2</button>{% endif %}
+
+                    {% if join2['su-c3'] %}<button class="surfur_button" style="background-color: brown;">c3</button>{% else %}<button class="surfur_button">c3</button>{% endif %}
+                    {% if join2['su-d3'] %}<button class="surfur_button" style="background-color: brown;">d3</button>{% else %}<button class="surfur_button">d3</button>{% endif %}
+                    {% if join2['su-e1'] %}<button class="surfur_button" style="background-color: brown;">e1</button>{% else %}<button class="surfur_button">e1</button>{% endif %}
+                    {% if join2['su-f1'] %}<button class="surfur_button" style="background-color: brown;">f1</button>{% else %}<button class="surfur_button">f1</button>{% endif %}
+                    {% if join2['su-g3'] %}<button class="surfur_button" style="background-color: brown;">g3</button>{% else %}<button class="surfur_button">g3</button>{% endif %}
+                    {% if join2['su-h3'] %}<button class="surfur_button" style="background-color: brown;">h3</button>{% else %}<button class="surfur_button">h3</button>{% endif %}
+                    {% if join2['su-i3'] %}<button class="surfur_button" style="background-color: brown;">i3</button>{% else %}<button class="surfur_button">i3</button>{% endif %}
+
+                    {% if join2['su-c4'] %}<button class="surfur_button" style="background-color: brown;">c4</button>{% else %}<button class="surfur_button">c4</button>{% endif %}
+                    {% if join2['su-d4'] %}<button class="surfur_button" style="background-color: brown;">d4</button>{% else %}<button class="surfur_button">d4</button>{% endif %}
+                    {% if join2['su-e2'] %}<button class="surfur_button" style="background-color: brown;">e2</button>{% else %}<button class="surfur_button">e2</button>{% endif %}
+                    {% if join2['su-f2'] %}<button class="surfur_button" style="background-color: brown;">f2</button>{% else %}<button class="surfur_button">f2</button>{% endif %}
+                    {% if join2['su-g4'] %}<button class="surfur_button" style="background-color: brown;">g4</button>{% else %}<button class="surfur_button">g4</button>{% endif %}
+                    {% if join2['su-h4'] %}<button class="surfur_button" style="background-color: brown;">h4</button>{% else %}<button class="surfur_button">h4</button>{% endif %}
+                    {% if join2['su-i4'] %}<button class="surfur_button" style="background-color: brown;">i4</button>{% else %}<button class="surfur_button">i4</button>{% endif %}
+
+                    {% if join2['su-c5'] %}<button class="surfur_button" style="background-color: brown;">c5</button>{% else %}<button class="surfur_button">c5</button>{% endif %}
+                    {% if join2['su-d5'] %}<button class="surfur_button" style="background-color: brown;">d5</button>{% else %}<button class="surfur_button">d5</button>{% endif %}
+                    {% if join2['su-e3'] %}<button class="surfur_button" style="background-color: brown;">e3</button>{% else %}<button class="surfur_button">e3</button>{% endif %}
+                    {% if join2['su-f3'] %}<button class="surfur_button" style="background-color: brown;">f3</button>{% else %}<button class="surfur_button">f3</button>{% endif %}
+                    {% if join2['su-g5'] %}<button class="surfur_button" style="background-color: brown;">g5</button>{% else %}<button class="surfur_button">g5</button>{% endif %}
+                    {% if join2['su-h5'] %}<button class="surfur_button" style="background-color: brown;">h5</button>{% else %}<button class="surfur_button">h5</button>{% endif %}
+                    {% if join2['su-i5'] %}<button class="surfur_button" style="background-color: brown;">i5</button>{% else %}<button class="surfur_button">i5</button>{% endif %}
+                </div>
+            </div>
+            <div class="Bottom-workspace">
+                <div class="hydrogen-place">
+                    {% if join2['hy-a1'] %}<button class="hydrogen_button" style="background-color: brown;">a1</button>{% else %}<button class="hydrogen_button">a1</button>{% endif %}
+                    {% if join2['hy-b1'] %}<button class="hydrogen_button" style="background-color: brown;">b1</button>{% else %}<button class="hydrogen_button">b1</button>{% endif %}
+                    {% if join2['hy-c1'] %}<button class="hydrogen_button" style="background-color: brown;">c1</button>{% else %}<button class="hydrogen_button">c1</button>{% endif %}
+                    {% if join2['hy-d1'] %}<button class="hydrogen_button" style="background-color: brown;">d1</button>{% else %}<button class="hydrogen_button">d1</button>{% endif %}
+                    {% if join2['hy-e1'] %}<button class="hydrogen_button" style="background-color: brown;">e1</button>{% else %}<button class="hydrogen_button">e1</button>{% endif %}
+                    {% if join2['hy-f1'] %}<button class="hydrogen_button" style="background-color: brown;">f1</button>{% else %}<button class="hydrogen_button">f1</button>{% endif %}
+                    {% if join2['hy-g1'] %}<button class="hydrogen_button" style="background-color: brown;">g1</button>{% else %}<button class="hydrogen_button">g1</button>{% endif %}
+                    {% if join2['hy-h1'] %}<button class="hydrogen_button" style="background-color: brown;">h1</button>{% else %}<button class="hydrogen_button">h1</button>{% endif %}
+                    {% if join2['hy-a2'] %}<button class="hydrogen_button" style="background-color: brown;">a2</button>{% else %}<button class="hydrogen_button">a2</button>{% endif %}
+                    {% if join2['hy-b2'] %}<button class="hydrogen_button" style="background-color: brown;">b2</button>{% else %}<button class="hydrogen_button">b2</button>{% endif %}
+                    {% if join2['hy-c2'] %}<button class="hydrogen_button" style="background-color: brown;">c2</button>{% else %}<button class="hydrogen_button">c2</button>{% endif %}
+                    {% if join2['hy-d2'] %}<button class="hydrogen_button" style="background-color: brown;">d2</button>{% else %}<button class="hydrogen_button">d2</button>{% endif %}
+                    {% if join2['hy-e2'] %}<button class="hydrogen_button" style="background-color: brown;">e2</button>{% else %}<button class="hydrogen_button">e2</button>{% endif %}
+                    {% if join2['hy-f2'] %}<button class="hydrogen_button" style="background-color: brown;">f2</button>{% else %}<button class="hydrogen_button">f2</button>{% endif %}
+                    {% if join2['hy-g2'] %}<button class="hydrogen_button" style="background-color: brown;">g2</button>{% else %}<button class="hydrogen_button">g2</button>{% endif %}
+                    {% if join2['hy-h2'] %}<button class="hydrogen_button" style="background-color: brown;">h2</button>{% else %}<button class="hydrogen_button">h2</button>{% endif %}
+                    {% if join2['hy-a3'] %}<button class="hydrogen_button" style="background-color: brown;">a3</button>{% else %}<button class="hydrogen_button">a3</button>{% endif %}
+                    {% if join2['hy-b3'] %}<button class="hydrogen_button" style="background-color: brown;">b3</button>{% else %}<button class="hydrogen_button">b3</button>{% endif %}
+                    {% if join2['hy-c3'] %}<button class="hydrogen_button" style="background-color: brown;">c3</button>{% else %}<button class="hydrogen_button">c3</button>{% endif %}
+                    {% if join2['hy-d3'] %}<button class="hydrogen_button" style="background-color: brown;">d3</button>{% else %}<button class="hydrogen_button">d3</button>{% endif %}
+                    {% if join2['hy-e3'] %}<button class="hydrogen_button" style="background-color: brown;">e3</button>{% else %}<button class="hydrogen_button">e3</button>{% endif %}
+                    {% if join2['hy-f3'] %}<button class="hydrogen_button" style="background-color: brown;">f3</button>{% else %}<button class="hydrogen_button">f3</button>{% endif %}
+                    {% if join2['hy-g3'] %}<button class="hydrogen_button" style="background-color: brown;">g3</button>{% else %}<button class="hydrogen_button">g3</button>{% endif %}
+                    {% if join2['hy-h3'] %}<button class="hydrogen_button" style="background-color: brown;">h3</button>{% else %}<button class="hydrogen_button">h3</button>{% endif %}
+                    {% if join2['hy-a4'] %}<button class="hydrogen_button" style="background-color: brown;">a4</button>{% else %}<button class="hydrogen_button">a4</button>{% endif %}
+                    {% if join2['hy-b4'] %}<button class="hydrogen_button" style="background-color: brown;">b4</button>{% else %}<button class="hydrogen_button">b4</button>{% endif %}
+                    {% if join2['hy-c4'] %}<button class="hydrogen_button" style="background-color: brown;">c4</button>{% else %}<button class="hydrogen_button">c4</button>{% endif %}
+                    {% if join2['hy-d4'] %}<button class="hydrogen_button" style="background-color: brown;">d4</button>{% else %}<button class="hydrogen_button">d4</button>{% endif %}
+                    {% if join2['hy-e4'] %}<button class="hydrogen_button" style="background-color: brown;">e4</button>{% else %}<button class="hydrogen_button">e4</button>{% endif %}
+                    {% if join2['hy-f4'] %}<button class="hydrogen_button" style="background-color: brown;">f4</button>{% else %}<button class="hydrogen_button">f4</button>{% endif %}
+                    {% if join2['hy-g4'] %}<button class="hydrogen_button" style="background-color: brown;">g4</button>{% else %}<button class="hydrogen_button">g4</button>{% endif %}
+                    {% if join2['hy-h4'] %}<button class="hydrogen_button" style="background-color: brown;">h4</button>{% else %}<button class="hydrogen_button">h4</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['hy-a5'] %}<button class="hydrogen_button" style="background-color: brown;">a5</button>{% else %}<button class="hydrogen_button">a5</button>{% endif %}
+                    {% if join2['hy-b5'] %}<button class="hydrogen_button" style="background-color: brown;">b5</button>{% else %}<button class="hydrogen_button">b5</button>{% endif %}
+                    {% if join2['hy-c5'] %}<button class="hydrogen_button" style="background-color: brown;">c5</button>{% else %}<button class="hydrogen_button">c5</button>{% endif %}
+                    {% if join2['hy-d5'] %}<button class="hydrogen_button" style="background-color: brown;">d5</button>{% else %}<button class="hydrogen_button">d5</button>{% endif %}
+                    {% if join2['hy-e5'] %}<button class="hydrogen_button" style="background-color: brown;">e5</button>{% else %}<button class="hydrogen_button">e5</button>{% endif %}
+                    {% if join2['hy-f5'] %}<button class="hydrogen_button" style="background-color: brown;">f5</button>{% else %}<button class="hydrogen_button">f5</button>{% endif %}
+                    {% if join2['hy-g5'] %}<button class="hydrogen_button" style="background-color: brown;">g5</button>{% else %}<button class="hydrogen_button">g5</button>{% endif %}
+                    {% if join2['hy-h5'] %}<button class="hydrogen_button" style="background-color: brown;">h5</button>{% else %}<button class="hydrogen_button">h5</button>{% endif %}
+                    {% if join2['hy-a6'] %}<button class="hydrogen_button" style="background-color: brown;">a6</button>{% else %}<button class="hydrogen_button">a6</button>{% endif %}
+                    {% if join2['hy-b6'] %}<button class="hydrogen_button" style="background-color: brown;">b6</button>{% else %}<button class="hydrogen_button">b6</button>{% endif %}
+                    {% if join2['hy-c6'] %}<button class="hydrogen_button" style="background-color: brown;">c6</button>{% else %}<button class="hydrogen_button">c6</button>{% endif %}
+                    {% if join2['hy-d6'] %}<button class="hydrogen_button" style="background-color: brown;">d6</button>{% else %}<button class="hydrogen_button">d6</button>{% endif %}
+                    {% if join2['hy-e6'] %}<button class="hydrogen_button" style="background-color: brown;">e6</button>{% else %}<button class="hydrogen_button">e6</button>{% endif %}
+                    {% if join2['hy-f6'] %}<button class="hydrogen_button" style="background-color: brown;">f6</button>{% else %}<button class="hydrogen_button">f6</button>{% endif %}
+                    {% if join2['hy-g6'] %}<button class="hydrogen_button" style="background-color: brown;">g6</button>{% else %}<button class="hydrogen_button">g6</button>{% endif %}
+                    {% if join2['hy-h6'] %}<button class="hydrogen_button" style="background-color: brown;">h6</button>{% else %}<button class="hydrogen_button">h6</button>{% endif %}
+                    {% if join2['hy-a7'] %}<button class="hydrogen_button" style="background-color: brown;">a7</button>{% else %}<button class="hydrogen_button">a7</button>{% endif %}
+                    {% if join2['hy-b7'] %}<button class="hydrogen_button" style="background-color: brown;">b7</button>{% else %}<button class="hydrogen_button">b7</button>{% endif %}
+                    {% if join2['hy-c7'] %}<button class="hydrogen_button" style="background-color: brown;">c7</button>{% else %}<button class="hydrogen_button">c7</button>{% endif %}
+                    {% if join2['hy-d7'] %}<button class="hydrogen_button" style="background-color: brown;">d7</button>{% else %}<button class="hydrogen_button">d7</button>{% endif %}
+                    {% if join2['hy-e7'] %}<button class="hydrogen_button" style="background-color: brown;">e7</button>{% else %}<button class="hydrogen_button">e7</button>{% endif %}
+                    {% if join2['hy-f7'] %}<button class="hydrogen_button" style="background-color: brown;">f7</button>{% else %}<button class="hydrogen_button">f7</button>{% endif %}
+                    {% if join2['hy-g7'] %}<button class="hydrogen_button" style="background-color: brown;">g7</button>{% else %}<button class="hydrogen_button">g7</button>{% endif %}
+                    {% if join2['hy-h7'] %}<button class="hydrogen_button" style="background-color: brown;">h7</button>{% else %}<button class="hydrogen_button">h7</button>{% endif %}
+                    {% if join2['hy-a8'] %}<button class="hydrogen_button" style="background-color: brown;">a8</button>{% else %}<button class="hydrogen_button">a8</button>{% endif %}
+                    {% if join2['hy-b8'] %}<button class="hydrogen_button" style="background-color: brown;">b8</button>{% else %}<button class="hydrogen_button">b8</button>{% endif %}
+                    {% if join2['hy-c8'] %}<button class="hydrogen_button" style="background-color: brown;">c8</button>{% else %}<button class="hydrogen_button">c8</button>{% endif %}
+                    {% if join2['hy-d8'] %}<button class="hydrogen_button" style="background-color: brown;">d8</button>{% else %}<button class="hydrogen_button">d8</button>{% endif %}
+                    {% if join2['hy-e8'] %}<button class="hydrogen_button" style="background-color: brown;">e8</button>{% else %}<button class="hydrogen_button">e8</button>{% endif %}
+                    {% if join2['hy-f8'] %}<button class="hydrogen_button" style="background-color: brown;">f8</button>{% else %}<button class="hydrogen_button">f8</button>{% endif %}
+                    {% if join2['hy-g8'] %}<button class="hydrogen_button" style="background-color: brown;">g8</button>{% else %}<button class="hydrogen_button">g8</button>{% endif %}
+                    {% if join2['hy-h8'] %}<button class="hydrogen_button" style="background-color: brown;">h8</button>{% else %}<button class="hydrogen_button">h8</button>{% endif %}
+                    {% if join2['hy-a9'] %}<button class="hydrogen_button" style="background-color: brown;">a9</button>{% else %}<button class="hydrogen_button">a9</button>{% endif %}
+                    {% if join2['hy-b9'] %}<button class="hydrogen_button" style="background-color: brown;">b9</button>{% else %}<button class="hydrogen_button">b9</button>{% endif %}
+                    {% if join2['hy-c9'] %}<button class="hydrogen_button" style="background-color: brown;">c9</button>{% else %}<button class="hydrogen_button">c9</button>{% endif %}
+                    {% if join2['hy-d9'] %}<button class="hydrogen_button" style="background-color: brown;">d9</button>{% else %}<button class="hydrogen_button">d9</button>{% endif %}
+                    {% if join2['hy-e9'] %}<button class="hydrogen_button" style="background-color: brown;">e9</button>{% else %}<button class="hydrogen_button">e9</button>{% endif %}
+                    {% if join2['hy-f9'] %}<button class="hydrogen_button" style="background-color: brown;">f9</button>{% else %}<button class="hydrogen_button">f9</button>{% endif %}
+                    {% if join2['hy-g9'] %}<button class="hydrogen_button" style="background-color: brown;">g9</button>{% else %}<button class="hydrogen_button">g9</button>{% endif %}
+                    {% if join2['hy-h9'] %}<button class="hydrogen_button" style="background-color: brown;">h9</button>{% else %}<button class="hydrogen_button">h9</button>{% endif %}
+                </div>
+                <div class="carbon-place">
+                    {% if join2['ca-a1'] %}<button class="carbon_button" style="background-color: brown;">a1</button>{% else %}<button class="carbon_button">a1</button>{% endif %}
+                    {% if join2['ca-b1'] %}<button class="carbon_button" style="background-color: brown;">b1</button>{% else %}<button class="carbon_button">b1</button>{% endif %}
+                    {% if join2['ca-c1'] %}<button class="carbon_button" style="background-color: brown;">c1</button>{% else %}<button class="carbon_button">c1</button>{% endif %}
+                    {% if join2['ca-d1'] %}<button class="carbon_button" style="background-color: brown;">d1</button>{% else %}<button class="carbon_button">d1</button>{% endif %}
+                    {% if join2['ca-e1'] %}<button class="carbon_button" style="background-color: brown;">e1</button>{% else %}<button class="carbon_button">e1</button>{% endif %}
+                    {% if join2['ca-f1'] %}<button class="carbon_button" style="background-color: brown;">f1</button>{% else %}<button class="carbon_button">f1</button>{% endif %}
+                    {% if join2['ca-g1'] %}<button class="carbon_button" style="background-color: brown;">g1</button>{% else %}<button class="carbon_button">g1</button>{% endif %}
+                    {% if join2['ca-h1'] %}<button class="carbon_button" style="background-color: brown;">h1</button>{% else %}<button class="carbon_button">h1</button>{% endif %}
+                    {% if join2['ca-a2'] %}<button class="carbon_button" style="background-color: brown;">a2</button>{% else %}<button class="carbon_button">a2</button>{% endif %}
+                    {% if join2['ca-b2'] %}<button class="carbon_button" style="background-color: brown;">b2</button>{% else %}<button class="carbon_button">b2</button>{% endif %}
+                    {% if join2['ca-c2'] %}<button class="carbon_button" style="background-color: brown;">c2</button>{% else %}<button class="carbon_button">c2</button>{% endif %}
+                    {% if join2['ca-d2'] %}<button class="carbon_button" style="background-color: brown;">d2</button>{% else %}<button class="carbon_button">d2</button>{% endif %}
+                    {% if join2['ca-e2'] %}<button class="carbon_button" style="background-color: brown;">e2</button>{% else %}<button class="carbon_button">e2</button>{% endif %}
+                    {% if join2['ca-f2'] %}<button class="carbon_button" style="background-color: brown;">f2</button>{% else %}<button class="carbon_button">f2</button>{% endif %}
+                    {% if join2['ca-g2'] %}<button class="carbon_button" style="background-color: brown;">g2</button>{% else %}<button class="carbon_button">g2</button>{% endif %}
+                    {% if join2['ca-h2'] %}<button class="carbon_button" style="background-color: brown;">h2</button>{% else %}<button class="carbon_button">h2</button>{% endif %}
+                    {% if join2['ca-a3'] %}<button class="carbon_button" style="background-color: brown;">a3</button>{% else %}<button class="carbon_button">a3</button>{% endif %}
+                    {% if join2['ca-b3'] %}<button class="carbon_button" style="background-color: brown;">b3</button>{% else %}<button class="carbon_button">b3</button>{% endif %}
+                    {% if join2['ca-c3'] %}<button class="carbon_button" style="background-color: brown;">c3</button>{% else %}<button class="carbon_button">c3</button>{% endif %}
+                    {% if join2['ca-d3'] %}<button class="carbon_button" style="background-color: brown;">d3</button>{% else %}<button class="carbon_button">d3</button>{% endif %}
+                    {% if join2['ca-e3'] %}<button class="carbon_button" style="background-color: brown;">e3</button>{% else %}<button class="carbon_button">e3</button>{% endif %}
+                    {% if join2['ca-f3'] %}<button class="carbon_button" style="background-color: brown;">f3</button>{% else %}<button class="carbon_button">f3</button>{% endif %}
+                    {% if join2['ca-g3'] %}<button class="carbon_button" style="background-color: brown;">g3</button>{% else %}<button class="carbon_button">g3</button>{% endif %}
+                    {% if join2['ca-h3'] %}<button class="carbon_button" style="background-color: brown;">h3</button>{% else %}<button class="carbon_button">h3</button>{% endif %}
+                    {% if join2['ca-a4'] %}<button class="carbon_button" style="background-color: brown;">a4</button>{% else %}<button class="carbon_button">a4</button>{% endif %}
+                    {% if join2['ca-b4'] %}<button class="carbon_button" style="background-color: brown;">b4</button>{% else %}<button class="carbon_button">b4</button>{% endif %}
+                    {% if join2['ca-c4'] %}<button class="carbon_button" style="background-color: brown;">c4</button>{% else %}<button class="carbon_button">c4</button>{% endif %}
+                    {% if join2['ca-d4'] %}<button class="carbon_button" style="background-color: brown;">d4</button>{% else %}<button class="carbon_button">d4</button>{% endif %}
+                    {% if join2['ca-e4'] %}<button class="carbon_button" style="background-color: brown;">e4</button>{% else %}<button class="carbon_button">e4</button>{% endif %}
+                    {% if join2['ca-f4'] %}<button class="carbon_button" style="background-color: brown;">f4</button>{% else %}<button class="carbon_button">f4</button>{% endif %}
+                    {% if join2['ca-g4'] %}<button class="carbon_button" style="background-color: brown;">g4</button>{% else %}<button class="carbon_button">g4</button>{% endif %}
+                    {% if join2['ca-h4'] %}<button class="carbon_button" style="background-color: brown;">h4</button>{% else %}<button class="carbon_button">h4</button>{% endif %}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    {% if join2['ca-a5'] %}<button class="carbon_button" style="background-color: brown;">a5</button>{% else %}<button class="carbon_button">a5</button>{% endif %}
+                    {% if join2['ca-b5'] %}<button class="carbon_button" style="background-color: brown;">b5</button>{% else %}<button class="carbon_button">b5</button>{% endif %}
+                    {% if join2['ca-c5'] %}<button class="carbon_button" style="background-color: brown;">c5</button>{% else %}<button class="carbon_button">c5</button>{% endif %}
+                    {% if join2['ca-d5'] %}<button class="carbon_button" style="background-color: brown;">d5</button>{% else %}<button class="carbon_button">d5</button>{% endif %}
+                    {% if join2['ca-e5'] %}<button class="carbon_button" style="background-color: brown;">e5</button>{% else %}<button class="carbon_button">e5</button>{% endif %}
+                    {% if join2['ca-f5'] %}<button class="carbon_button" style="background-color: brown;">f5</button>{% else %}<button class="carbon_button">f5</button>{% endif %}
+                    {% if join2['ca-g5'] %}<button class="carbon_button" style="background-color: brown;">g5</button>{% else %}<button class="carbon_button">g5</button>{% endif %}
+                    {% if join2['ca-h5'] %}<button class="carbon_button" style="background-color: brown;">h5</button>{% else %}<button class="carbon_button">h5</button>{% endif %}
+                    {% if join2['ca-a6'] %}<button class="carbon_button" style="background-color: brown;">a6</button>{% else %}<button class="carbon_button">a6</button>{% endif %}
+                    {% if join2['ca-b6'] %}<button class="carbon_button" style="background-color: brown;">b6</button>{% else %}<button class="carbon_button">b6</button>{% endif %}
+                    {% if join2['ca-c6'] %}<button class="carbon_button" style="background-color: brown;">c6</button>{% else %}<button class="carbon_button">c6</button>{% endif %}
+                    {% if join2['ca-d6'] %}<button class="carbon_button" style="background-color: brown;">d6</button>{% else %}<button class="carbon_button">d6</button>{% endif %}
+                    {% if join2['ca-e6'] %}<button class="carbon_button" style="background-color: brown;">e6</button>{% else %}<button class="carbon_button">e6</button>{% endif %}
+                    {% if join2['ca-f6'] %}<button class="carbon_button" style="background-color: brown;">f6</button>{% else %}<button class="carbon_button">f6</button>{% endif %}
+                    {% if join2['ca-g6'] %}<button class="carbon_button" style="background-color: brown;">g6</button>{% else %}<button class="carbon_button">g6</button>{% endif %}
+                    {% if join2['ca-h6'] %}<button class="carbon_button" style="background-color: brown;">h6</button>{% else %}<button class="carbon_button">h6</button>{% endif %}
+                    {% if join2['ca-a7'] %}<button class="carbon_button" style="background-color: brown;">a7</button>{% else %}<button class="carbon_button">a7</button>{% endif %}
+                    {% if join2['ca-b7'] %}<button class="carbon_button" style="background-color: brown;">b7</button>{% else %}<button class="carbon_button">b7</button>{% endif %}
+                    {% if join2['ca-c7'] %}<button class="carbon_button" style="background-color: brown;">c7</button>{% else %}<button class="carbon_button">c7</button>{% endif %}
+                    {% if join2['ca-d7'] %}<button class="carbon_button" style="background-color: brown;">d7</button>{% else %}<button class="carbon_button">d7</button>{% endif %}
+                    {% if join2['ca-e7'] %}<button class="carbon_button" style="background-color: brown;">e7</button>{% else %}<button class="carbon_button">e7</button>{% endif %}
+                    {% if join2['ca-f7'] %}<button class="carbon_button" style="background-color: brown;">f7</button>{% else %}<button class="carbon_button">f7</button>{% endif %}
+                    {% if join2['ca-g7'] %}<button class="carbon_button" style="background-color: brown;">g7</button>{% else %}<button class="carbon_button">g7</button>{% endif %}
+                    {% if join2['ca-h7'] %}<button class="carbon_button" style="background-color: brown;">h7</button>{% else %}<button class="carbon_button">h7</button>{% endif %}
+                    {% if join2['ca-a8'] %}<button class="carbon_button" style="background-color: brown;">a8</button>{% else %}<button class="carbon_button">a8</button>{% endif %}
+                    {% if join2['ca-b8'] %}<button class="carbon_button" style="background-color: brown;">b8</button>{% else %}<button class="carbon_button">b8</button>{% endif %}
+                    {% if join2['ca-c8'] %}<button class="carbon_button" style="background-color: brown;">c8</button>{% else %}<button class="carbon_button">c8</button>{% endif %}
+                    {% if join2['ca-d8'] %}<button class="carbon_button" style="background-color: brown;">d8</button>{% else %}<button class="carbon_button">d8</button>{% endif %}
+                    {% if join2['ca-e8'] %}<button class="carbon_button" style="background-color: brown;">e8</button>{% else %}<button class="carbon_button">e8</button>{% endif %}
+                    {% if join2['ca-f8'] %}<button class="carbon_button" style="background-color: brown;">f8</button>{% else %}<button class="carbon_button">f8</button>{% endif %}
+                    {% if join2['ca-g8'] %}<button class="carbon_button" style="background-color: brown;">g8</button>{% else %}<button class="carbon_button">g8</button>{% endif %}
+                    {% if join2['ca-h8'] %}<button class="carbon_button" style="background-color: brown;">h8</button>{% else %}<button class="carbon_button">h8</button>{% endif %}
+                    {% if join2['ca-a9'] %}<button class="carbon_button" style="background-color: brown;">a9</button>{% else %}<button class="carbon_button">a9</button>{% endif %}
+                    {% if join2['ca-b9'] %}<button class="carbon_button" style="background-color: brown;">b9</button>{% else %}<button class="carbon_button">b9</button>{% endif %}
+                    {% if join2['ca-c9'] %}<button class="carbon_button" style="background-color: brown;">c9</button>{% else %}<button class="carbon_button">c9</button>{% endif %}
+                    {% if join2['ca-d9'] %}<button class="carbon_button" style="background-color: brown;">d9</button>{% else %}<button class="carbon_button">d9</button>{% endif %}
+                    {% if join2['ca-e9'] %}<button class="carbon_button" style="background-color: brown;">e9</button>{% else %}<button class="carbon_button">e9</button>{% endif %}
+                    {% if join2['ca-f9'] %}<button class="carbon_button" style="background-color: brown;">f9</button>{% else %}<button class="carbon_button">f9</button>{% endif %}
+                    {% if join2['ca-g9'] %}<button class="carbon_button" style="background-color: brown;">g9</button>{% else %}<button class="carbon_button">g9</button>{% endif %}
+                    {% if join2['ca-h9'] %}<button class="carbon_button" style="background-color: brown;">h9</button>{% else %}<button class="carbon_button">h9</button>{% endif %}
+                </div>
             </div>
         </div>
     </div>

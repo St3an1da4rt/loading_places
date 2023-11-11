@@ -1,0 +1,42 @@
+body {
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ebf0ff;
+    min-width: 240px;
+}
+
+header {
+    display: grid;
+    font-weight: 100;
+    align-items: end;
+    grid-template-columns: 1fr 3fr;
+    font-size: 10px;
+    height: 100px;
+    width: 100vw;
+    margin: 0px;
+    background-color: #c25555;
+    margin-bottom: 4vh; 
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .hrefs {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+header .hrefs a {
+    font-size: 3vw;
+}
+
+header .hrefs a:hover {
+    text-shadow: 0px 0px 5px #fff;
+}
