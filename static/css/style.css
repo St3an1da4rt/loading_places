@@ -1,0 +1,10 @@
+body {
+    background-color: aqua;
+}
+
+.surfur_place {
+    background-color:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
