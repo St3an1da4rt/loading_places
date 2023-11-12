@@ -15,11 +15,15 @@ header {
     align-items: end;
     grid-template-columns: 1fr 3fr;
     font-size: 10px;
-    height: 100px;
+    height: 150px;
     width: 100vw;
     margin: 0px;
     background-color: #c25555;
     margin-bottom: 4vh; 
+}
+
+header .img_logo {
+    margin: 20px;
 }
 
 header a {
@@ -49,6 +53,7 @@ header .hrefs a:hover {
 .plane {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
 }
 
 .Top_workspace {
@@ -64,6 +69,7 @@ header .hrefs a:hover {
 
 .carbon-place button {
     font-size: 1vb;
+    opacity: 1;
     border: none;
     display: flex;
     border-radius: 0.5vw;
@@ -89,7 +95,21 @@ header .hrefs a:hover {
     justify-content: center;
 }
 
+.surfur-place button:hover {
+    opacity: 0.8;
+}
+
+.hydrogen-place button:hover {
+    opacity: 0.8;
+}
+
+.carbon-place button:hover {
+    opacity: 0.8;
+}
+
 .surfur-place {
+    background-color: #03c6fc;
+    opacity: 0.8;
     padding: 3vw;
     padding-bottom: 2vw;
     border: 1px solid #333;
@@ -102,6 +122,8 @@ header .hrefs a:hover {
 }
 
 .carbon-place {
+    background-color: #fc3d03;
+    opacity: 0.8;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 3vw;
@@ -114,6 +136,8 @@ header .hrefs a:hover {
 }
 
 .hydrogen-place {
+    background-color: #fcce03;
+    opacity: 0.8;
     padding: 3vw;
     padding-bottom: 2vw;
     border: 1px solid #333;
